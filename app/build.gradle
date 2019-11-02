@@ -18,6 +18,7 @@
  */
 
 apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
 
 if (project.file('../ActivityDiarySigning.properties').exists()) {
     apply plugin: 'com.github.triplet.play'
@@ -73,6 +74,7 @@ android {
         debug {
             applicationIdSuffix ".debug"
             versionNameSuffix "-debug"
+            testCoverageEnabled true
         }
         rcTest {
             // to be used to create screenshots and alike
