@@ -375,8 +375,11 @@ public class MainActivity extends BaseActivity implements
             snackbarText.setSpan(new StyleSpan(android.graphics.Typeface.BOLD), 0, end, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
             snackbarText.setSpan(new RelativeSizeSpan((float) 1.4152), 0, end, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
 
+            // Ting: set the snackbar's waiting time as indefinite
+            //Snackbar undoSnackBar = Snackbar.make(findViewById(R.id.main_layout),
+            //        snackbarText, Snackbar.LENGTH_LONG);
             Snackbar undoSnackBar = Snackbar.make(findViewById(R.id.main_layout),
-                    snackbarText, Snackbar.LENGTH_LONG);
+                    snackbarText, 8000);
             undoSnackBar.setAction(R.string.action_undo, new View.OnClickListener() {
                 /**
                  * Called when a view has been clicked.

@@ -144,6 +144,7 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
     testImplementation "org.robolectric:robolectric:4.1"
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-3'
+    // disable leakcanary, otherwise Droidbot will start leakcanary first.
+    //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-3'
 }
 
