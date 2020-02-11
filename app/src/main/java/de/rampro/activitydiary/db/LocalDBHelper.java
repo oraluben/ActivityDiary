@@ -52,36 +52,37 @@ public class LocalDBHelper extends SQLiteOpenHelper {
                 "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
                 " VALUES " +
                 " ('Officework', '" + Color.parseColor("#00796b") + "');");
-        db.execSQL("INSERT INTO " +
-                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
-                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
-                " VALUES " +
-                " ('Swimming', '" + Color.parseColor("#0288d1") + "');");
-        db.execSQL("INSERT INTO " +
-                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
-                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
-                " VALUES " +
-                " ('Relaxing', '" + Color.parseColor("#fbc02d") + "');");
-        db.execSQL("INSERT INTO " +
-                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
-                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
-                " VALUES " +
-                " ('Cooking', '" + Color.parseColor("#e64a19") + "');");
-        db.execSQL("INSERT INTO " +
-                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
-                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
-                " VALUES " +
-                " ('Cleaning', '" + Color.parseColor("#CFD8DC") + "');");
-        db.execSQL("INSERT INTO " +
-                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
-                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
-                " VALUES " +
-                " ('Cinema', '" + Color.parseColor("#c2185b") + "');");
-        db.execSQL("INSERT INTO " +
-                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
-                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
-                " VALUES " +
-                " ('Sleeping', '" + Color.parseColor("#303f9f") + "');");
+        // Ting: keep only three activities
+//        db.execSQL("INSERT INTO " +
+//                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
+//                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
+//                " VALUES " +
+//                " ('Swimming', '" + Color.parseColor("#0288d1") + "');");
+//        db.execSQL("INSERT INTO " +
+//                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
+//                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
+//                " VALUES " +
+//                " ('Relaxing', '" + Color.parseColor("#fbc02d") + "');");
+//        db.execSQL("INSERT INTO " +
+//                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
+//                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
+//                " VALUES " +
+//                " ('Cooking', '" + Color.parseColor("#e64a19") + "');");
+//        db.execSQL("INSERT INTO " +
+//                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
+//                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
+//                " VALUES " +
+//                " ('Cleaning', '" + Color.parseColor("#CFD8DC") + "');");
+//        db.execSQL("INSERT INTO " +
+//                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
+//                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
+//                " VALUES " +
+//                " ('Cinema', '" + Color.parseColor("#c2185b") + "');");
+//        db.execSQL("INSERT INTO " +
+//                ActivityDiaryContract.DiaryActivity.TABLE_NAME +
+//                "(" + ActivityDiaryContract.DiaryActivity.NAME + "," + ActivityDiaryContract.DiaryActivity.COLOR + ")" +
+//                " VALUES " +
+//                " ('Sleeping', '" + Color.parseColor("#303f9f") + "');");
     }
 
     public static final int CURRENT_VERSION = 5;
